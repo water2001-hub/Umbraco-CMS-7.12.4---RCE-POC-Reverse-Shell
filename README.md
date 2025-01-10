@@ -8,8 +8,8 @@ Step 1: Clone the Repository
 
 Atep 2: Install Dependencies
 '''
-pip install requests beautifulsoup4
-pip3 install requests
+$ pip install requests beautifulsoup4
+$ pip3 install requests
 '''
 
 
