@@ -13,7 +13,6 @@ Step 1: Clone the Repository
 Step 2: Install Dependencies and ensure you have Python 3 installed:
 ```
 pip install requests beautifulsoup4
-pip3 install requests
 ```
 
 ## Usage
