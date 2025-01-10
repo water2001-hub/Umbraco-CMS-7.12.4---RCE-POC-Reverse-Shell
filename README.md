@@ -7,8 +7,8 @@ This repository contains a PoC exploit (https://www.exploit-db.com/exploits/4615
 Step 1: Clone the Repository
 
 Atep 2: Install Dependencies
-pip install requests beautifulsoup4
-pip3 install requests
+$ pip install requests beautifulsoup4
+$ pip3 install requests
 
 
 
