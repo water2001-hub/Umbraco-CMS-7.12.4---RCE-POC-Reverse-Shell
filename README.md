@@ -1,4 +1,4 @@
-# Umbraco CMS 7.12.4 RCE POC / Reverse Shell
+# Umbraco CMS 7.12.4 RCE PoC / Reverse Shell
 
 ## Overview
 This repository contains a Proof-of-Concept (PoC) exploit for an authenticated Remote Code Execution (RCE) vulnerability in Umbraco CMS 7.12.4. 
